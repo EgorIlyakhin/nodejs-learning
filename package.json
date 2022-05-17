@@ -1,0 +1,30 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run assetswatch & tsc -watch & npm run open & nodemon --es-module-specifier-resolution=node dist/index.js",
+    "open": "open http://localhost:4004/",
+    "assetswatch": "nodemon -e hbs -x npm run copy -i dist/",
+    "copy": "rimraf dist && npm run copyfiles",
+    "copyfiles": "copyfiles -u 1 ./**/*.hbs ./src/**/*.css ./src/**/*.json dist/ "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "copyfiles": "^2.4.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,81 @@
+<h1>edit</h1>
+
+<div class="row">
+    <form class="col s12" action="/edit" method="POST">
+        <div class="row">
+          <div class="input-field col s4">
+            <input placeholder="Name" name="name" id="name" type="text" class="validate" required>
+            <label for="Name">Name</label>
+            <span class="helper-text" data-error="enter name">enter name</span>
+          </div>
+          <div class="input-field col s4">
+            <input placeholder="Photo" name="photo" id="photo" type="text" class="validate" required>
+            <label for="Photo">Photo</label>
+            <span class="helper-text" data-error="enter photo url">enter photo url</span>
+          </div>
+          <div class="input-field col s4">
+            <input placeholder="Price" name="price" id="price" type="text" class="validate" required>
+            <label for="Price">Price</label>
+            <span class="helper-text" data-error="enter price">enter price</span>
+          </div>
+          <div class="input-field col s12">
+            <div class="input-field col s6">
+
+              <p>
+                <label>
+                  <input name="sex"  type="radio" checked value="Male" />
+                  <span>Male</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input name="sex" type="radio" value="Female" />
+                  <span>Female</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input name="sex" type="radio" value="Unknown" />
+                  <span>Unknown</span>
+                </label>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <select name="type">
+                    <option value="" disabled selected>Choose type</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Water">Water</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Fighting">Fighting</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Ground">Ground</option>
+                    <option value="Flying">Flying</option>
+                    <option value="Psychic">Psychic</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Steel">Steel</option>
+                    <option value="Fairy">Fairy</option>
+                </select>
+                <label>Type</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <button class="btn waves-effect waves-light" type="submit" name="action">
+                    Update
+                </button>
+
+            </div>
+        </div>
+    </form>
+</div>

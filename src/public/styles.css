@@ -1,0 +1,43 @@
+.nav-wrapper {
+    padding: 0 2rem;
+}
+
+.active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.detailed-wrapper {
+    display: flex;
+}
+
+.detailed-image {
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+}
+
+.detailed-info {
+    margin-left: 56px;
+    background: #fafafa;
+    width: 100%;
+    padding: 42px;
+}
+
+.detailed-header {
+    font-size: 20px;
+}
+
+.card-price {
+    margin: 0 24px;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    text-transform: uppercase;
+}
+
+.card-title {
+    background: #66666680;
+    border-radius: 8px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "pretty": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "lib": ["es2019", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "types": ["node"],
+    "baseUrl": "./",
+
+  },
+  "include": [
+    "./src"
+  ]
+}

@@ -1,0 +1,27 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Pokedex</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {{#if home}}
+                <li><a class="active" href="/">Main</a></li>
+            {{else}}
+                <li><a href="/">Main</a></li>
+            {{/if}}
+            {{#if view-all}}
+                <li><a class="active" href="/view-all">View all</a></li>
+            {{else}}
+                <li><a href="/view-all">View all</a></li>
+            {{/if}}
+            {{#if add-one}}
+                <li><a class="active" href="/add-one">Add one</a></li>
+            {{else}}
+                <li><a href="/add-one">Add one</a></li>
+            {{/if}}
+            {{#if cart}}
+                <li><a class="active" href="/cart">Cart</a></li>
+            {{else}}
+                <li><a href="/cart">Cart</a></li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>
